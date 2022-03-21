@@ -1,11 +1,22 @@
 const selectInput = document.getElementById("selectInput");
 const selectElement = document.querySelectorAll(".select-element");
-
+const initialElements = selectElement;
 const resultArray = [];
 
 selectInput.addEventListener("focusin", () => {
   const list = document.querySelector(".select-list");
   list.style.display = "block";
+});
+
+selectInput.addEventListener("input", (input) => {
+  selectElement.forEach((e) => {
+    if (!e.value.toLowerCase().match(input.target.value.toLowerCase())) {
+      console.log(e.value.search(input.target.value));
+      e.classList.add("hide");
+    } else {
+      e.classList.remove("hide");
+    }
+  });
 });
 
 const resultInput = document.getElementById("resultInput");
