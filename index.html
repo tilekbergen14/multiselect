@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Select multiple</title>
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <div class="multi-select">
+      <div class="flex" id="result-box">
+        <input
+          id="selectInput"
+          class="select-input"
+          type="text"
+          placeholder="Select Categories"
+        />
+      </div>
+      <div class="select-list">
+        <option class="select-element" value="JavaScript">JavaScript</option>
+        <option class="select-element" value="HTML5">HTML5</option>
+        <option class="select-element" value="Java">Java</option>
+        <option class="select-element" value="Python">Python</option>
+        <option class="select-element" value="Ruby">Ruby</option>
+        <option class="select-element" value="Go">Go</option>
+        <button class="btn" onclick="closeSelect()">Done</button>
+      </div>
+      <input type="hidden" name="result" id="resultInput" value="" />
+    </div>
+    <script src="./tiqu.js"></script>
+  </body>
+</html>

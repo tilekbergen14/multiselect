@@ -1,0 +1,90 @@
+body {
+  background-color: #efefef;
+}
+
+/************multiselect*************/
+.multi-select {
+  max-width: 1000px;
+  width: 100%;
+  position: relative;
+}
+.select-input {
+  border: none;
+  outline: none;
+  margin: 4px 0;
+  flex-grow: 1;
+}
+.flex {
+  display: flex;
+  background-color: #fff;
+  padding: 4px;
+  border-radius: 4px;
+  flex-wrap: wrap;
+}
+.badge {
+  background-color: dodgerblue;
+  width: max-content;
+  color: #fff;
+  padding: 4px 8px;
+  margin: 2px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+}
+.icon {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 12px;
+  margin-left: 8px;
+  outline: none;
+  background-color: transparent;
+  border: none;
+}
+.icon:hover {
+  cursor: pointer;
+}
+.icon > div {
+  height: 3px;
+  width: 12px;
+  border-radius: 4px;
+  background-color: #fff;
+  position: absolute;
+}
+.line1 {
+  transform: rotate(45deg);
+}
+.line2 {
+  transform: rotate(-45deg);
+}
+.select-list {
+  background-color: #fff;
+  margin-top: 4px;
+  border-radius: 4px;
+  display: none;
+  position: absolute;
+  width: 100%;
+}
+.select-element {
+  padding: 4px;
+  color: #808080;
+  font-size: 14px;
+  font-weight: 200;
+}
+.frozen {
+  color: gray;
+  cursor: not-allowed !important;
+  display: none;
+}
+.select-element:hover {
+  background-color: dodgerblue;
+  color: white;
+  cursor: pointer;
+}
+.btn {
+  outline: none;
+  border: none;
+  background-color: dodgerblue;
+  width: 100%;
+  padding: 8px;
+}
